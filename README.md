@@ -18,7 +18,7 @@ var objPKCE = new PKCE();
 var stuPKCE = objPKCE.generatePKCE();
 ```
 
-returns a struct containin values similar to the following:
+returns a struct containing values similar to the following:
 
 ```
 {
@@ -40,7 +40,7 @@ var isValid = objPKCE.verifyChallenge( codeVerifier, codeChallenge );
 
 MIT License
 
-Copyright (c) 2012 Matt Gifford (Monkeh Works Ltd)
+Copyright (c) 2022 Matt Gifford (coldfumonkeh)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
