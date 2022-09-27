@@ -1,0 +1,59 @@
+{
+    "name":"PKCE",
+    "slug":"pkce",
+    "version":"1.0.0",
+    "author":"Matt Gifford (https://www.monkehworks.com)",
+    "location":"coldfumonkeh/pkce#v1.0.0",
+    "directory":"",
+    "createPackageDirectory":"true",
+    "homepage":"https://github.com/coldfumonkeh/pkce",
+    "documentation":"https://github.com/coldfumonkeh/pkce",
+    "type":"projects",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/coldfumonkeh/pkce.git"
+    },
+    "bugs":"https://github.com/coldfumonkeh/pkce/issues",
+    "shortDescription":"A CFML component to manage generation of PKCE values for the OAuth2 protocol.",
+    "keywords":[
+        "music",
+        "api"
+    ],
+    "scripts":{
+        "postVersion":"package set location='coldfumonkeh/pkce#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    },
+    "private":"false",
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "testbox":{
+        "runner":"http://127.0.0.1:49659/tests/runner.cfm",
+        "labels":[],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[],
+        "notify":{
+            "emails":[],
+            "growl":"",
+            "URL":""
+        }
+    },
+    "dependencies":{},
+    "installPaths":{
+        "testbox":"testbox/"
+    },
+    "devDependencies":{
+        "testbox":"^4.5.0+5"
+    }
+}
